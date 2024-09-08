@@ -1,11 +1,17 @@
-const id = "2172797"
-const city = ""
+const id = "2172797";
+const city = "Louisa";
 
-const requestUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city},id=${id}&cnt=6&appid=65c7600db9ad1618aa7165b36f2c4a6c`;
+// const test = $('#data');
 
-function save(){
+const test = document.getElementById("#data");
+
+
+
+const requestUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city},id=${id}&cnt=6&appid=`;
+
+function save() {
     console.log("heree");
-    
+
 }
 
 
@@ -16,7 +22,18 @@ function getInformation() {
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
-        });
+            // console.log(data);
+             let ver = data.list;
 
+             for (let i = 0; i < ver.length; i++) {
+                console.log(ver[i].wind.speed);
+                
+                
+             }
+        
+        console.log(ver);
+
+        });
 }
+
+getInformation();
