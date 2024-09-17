@@ -11,12 +11,15 @@ const daysTemp = document.querySelector('.days');
 
 function getInformation() {
 
-    if (city) {
-        city = document.getElementById("city").value;
-    } else {
+    titleId.innerHTML = "";
+    tempId.innerHTML = "";
+    windId.innerHTML = "";
+    humidityId.innerHTML = "";
+    daysTemp.innerHTML = "";
+
+    if (!city) {
         city = "Miami";
     }
-
 
     const requestUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city},id=${id}&cnt=6&appid=${apeKey}`;
 
@@ -57,8 +60,6 @@ function getInformation() {
             humidityEl.textContent = humidity;
             humidityId.appendChild(humidityEl);
 
-
-
             for (let i = 1; i < data.list.length; i++) {
 
                 let temp = tempCalculo(data.list[i].main.temp);
@@ -68,11 +69,8 @@ function getInformation() {
 
                 daysTemp.innerHTML += createCard(fechaSumada, temp.toFixed(2), data.list[i].wind.speed, data.list[i].main.humidity);
             }
-
         });
 }
-
-getInformation();
 
 function createCard(fechaSumada, temp, wind, humidity) {
 
@@ -101,3 +99,14 @@ function sumarDias(fecha, dias) {
     nuevaFecha.setDate(nuevaFecha.getDate() + dias);
     return nuevaFecha.toLocaleDateString('en-US');;
 }
+
+function getCityWeather(name) {
+    if (!name) {
+        city = document.getElementById("city").value;
+    } else {
+        city = name;
+    }
+    getInformation();
+}
+
+getInformation();
