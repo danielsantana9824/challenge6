@@ -1,6 +1,6 @@
 const id = "2172797";
-const city = "Louisa";
 const apeKey = "65c7600db9ad1618aa7165b36f2c4a6c";
+let city = "";
 
 const titleId = document.getElementById("title");
 const tempId = document.getElementById("temp");
@@ -9,17 +9,16 @@ const humidityId = document.getElementById("humidity");
 const cardId = document.querySelector(".cards");
 const daysTemp = document.querySelector('.days');
 
-
-
-const requestUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city},id=${id}&cnt=6&appid=${apeKey}`;
-
-function save() {
-    console.log("heree");
-
-}
-
-
 function getInformation() {
+
+    if (city) {
+        city = document.getElementById("city").value;
+    } else {
+        city = "Miami";
+    }
+
+
+    const requestUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city},id=${id}&cnt=6&appid=${apeKey}`;
 
     fetch(requestUrl)
         .then(function (response) {
