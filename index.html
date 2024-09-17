@@ -14,9 +14,9 @@
 
     <header>
         <nav class="navbar navbar-dark bg-dark">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+                    <!-- <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24"> -->
                 </a>
             </div>
         </nav>
@@ -35,31 +35,57 @@
                     </div>
 
                     <div class="col-sm-6 pt-4">
-                        <button type="button" onclick="save()" class="btn btn-primary">Primary</button>
-                    </div>
+                    <button type="button" onclick="save()" class="btn btn-primary">Search</button> </div>
                 </form>
+            
             </section>
 
-            <section class="top box col-sm-8 d-flex justify-content-start">
+            <section class="top col-sm-8 d-flex justify-content-start">
 
-                <div class="row">
+                <div class="row box">
 
-                <div id="title"></div>
-                <div id="temp" class="row"></div>
-                <div id="wind" class="row"></div>
-                <div id="humidity" class="row"></div> 
+                    <div id="title"></div>
+                    <div id="temp" class="row"></div>
+                    <div id="wind" class="row"></div>
+                    <div id="humidity" class="row"></div>
                 </div>
 
+
+
+            </section>
+        </div>
+        <div class="top row">
+
+
+
+            <section class="top col-sm-4 d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-12 margin">
+                        <button class="btn btn-info w-50 my-2">Miami</button>
+                        <button class="btn btn-info w-50 my-2">Chicago</button>
+                        <button class="btn btn-info w-50 my-2">Miami</button>
+                        <button class="btn btn-info w-50 my-2">Miami</button>
+                        <button class="btn btn-info w-50 my-2">Miami</button>
+                        <button class="btn btn-info w-50 my-2">Miami</button>
+                        <button class="btn btn-info w-50 my-2">Miami</button>
+                        <button class="btn btn-info w-50 my-2">Miami</button>
+                    </div>
+                </div>
             </section>
 
+            <div class="col-sm-8 cards">
+                <h2>5-Day Forecast:</h2>
 
-        </div>
+                <div class="row days">
+                    
+                </div>
+            </div>
     </main>
 
-    <script
-    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-    crossorigin="anonymous"></script>
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
 
     <script src="./develop/js/logic.js"></script>
 </body>
