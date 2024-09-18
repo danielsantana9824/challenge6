@@ -44,12 +44,19 @@ function getInformation() {
 
             let humidity = "Humidity: " + wheaterDay.main.humidity + " %";
 
-            const favIconTitle = wheaterDay.weather[0].icon
-
+            const favIconTitle = wheaterDay.weather[0].icon;
+            const favIconUrl = `https://openweathermap.org/img/wn/${favIconTitle}@2x.png`;
+            
+            const iconEl = document.createElement("img");
+            iconEl.src = favIconUrl;
+            iconEl.alt = "Weather Icon";
+            iconEl.style.width = "100px"; 
 
             const titleEl = document.createElement("h1");
             titleEl.textContent = title;
+
             titleId.appendChild(titleEl);
+            titleId.appendChild(iconEl);
 
             const tempEl = document.createElement("p");
             tempEl.textContent = temp;
