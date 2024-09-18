@@ -44,6 +44,9 @@ function getInformation() {
 
             let humidity = "Humidity: " + wheaterDay.main.humidity + " %";
 
+            const favIconTitle = wheaterDay.weather[0].icon
+
+
             const titleEl = document.createElement("h1");
             titleEl.textContent = title;
             titleId.appendChild(titleEl);
@@ -62,25 +65,28 @@ function getInformation() {
 
             for (let i = 1; i < data.list.length; i++) {
 
+                const favIcon = data.list[i].weather[0].icon
+
                 let temp = tempCalculo(data.list[i].main.temp);
 
                 let fechaHoy = new Date();
                 let fechaSumada = sumarDias(fechaHoy, i);
 
-                daysTemp.innerHTML += createCard(fechaSumada, temp.toFixed(2), data.list[i].wind.speed, data.list[i].main.humidity);
+                daysTemp.innerHTML += createCard(fechaSumada, favIcon, temp.toFixed(2), data.list[i].wind.speed, data.list[i].main.humidity);
             }
         });
 }
 
-function createCard(fechaSumada, temp, wind, humidity) {
+function createCard(fechaSumada, favIcon, temp, wind, humidity) {
 
     return `
          <div class="col-sm-4 bottom">
              <div class="card bg-primary text-white">
                  <div class="card-body">
                      <h4 class="card-title">${fechaSumada}</h4>
-                     <p class="card-text">Temp: ${temp}</p>
-                    <p class="card-text">Wind: ${wind}</p>
+                      <img src="https://openweathermap.org/img/wn/${favIcon}@2x.png" alt="">
+                     <p class="card-text">Temp: ${temp} °F</p>
+                    <p class="card-text">Wind: ${wind} MPH</p>
                     <p class="card-text">Humidity: ${humidity} %</p>
                  </div>
              </div>
