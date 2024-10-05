@@ -38,8 +38,9 @@ To add a screenshot, create an assets/images folder in your repository and uploa
 
 ## GitHub Repository and Live Application
 
-GitHub Repository: Weather Search GitHub Repo
-Live Application: Live Weather Search Demo
+GitHub Repository: https://github.com/danielsantana9824/challenge6-wather
+
+Live Application: https://danielsantana9824.github.io/challenge6-wather
 
 ## Credits
 If you worked with collaborators, list their names and GitHub profiles here.
