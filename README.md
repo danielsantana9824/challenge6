@@ -34,7 +34,7 @@ Screenshots
 To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Use the following syntax to display the image in your README:
 
 
-![Screenshot](assets/images/screen.PNG)
+![Screenshot](develop/images/screen.PNG)
 
 ## GitHub Repository and Live Application
 
