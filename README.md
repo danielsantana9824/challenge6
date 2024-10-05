@@ -1,53 +1,53 @@
-# challenge6
+## Challenge 6: Weather Search Application
+
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This project is a website that allows users to search for the weather in any city. The site provides up-to-date weather information using data fetched from an API.
 
-this is a website to register each employee, and choose random one winner.
+## Motivation: 
 
--What was your motivation?
-improve my logical y i practice javaScript to create elements, and i work with apis
+The goal of this project was to improve my logical thinking and practice JavaScript by dynamically creating elements and working with external APIs.
 
-- Why did you build this project?
-Because i can practice my knowledge, improve, and search information on internet.
+## Why was this project built?:
 
-- What problem does it solve?
-the people can know what is the average and register the employee
+ I built this project to enhance my programming skills, practice integrating APIs, and expand my ability to search for solutions and resources on the internet.
 
-- What did you learn?
-javaScript, and how can i use some functions.
+## Problem Solved:
 
-## Table of Contents (Optional)
+ This website allows users to easily search for and view the current weather in any city, making it convenient for people to check the weather in various locations.
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## What did I learn?: 
 
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+Through this project, I improved my JavaScript skills, specifically in using APIs, manipulating the DOM, and implementing dynamic features.
 
-## Usage
+Table of Contents
+Usage
+Credits
+License
+Usage
+To use the application:
 
-Provide instructions and examples for use. Include screenshots as needed.
+Enter the name of a city into the search bar.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+The weather information for that city will be displayed, including temperature, wind speed, and humidity.
+Screenshots
+To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Use the following syntax to display the image in your README:
 
-   ## ligth version to project
 
-    ![alt text](.\images\screen.PNG)
+![Screenshot](assets/images/screen.PNG)
 
-    GitHub report: https://github.com/danielsantana9824/challenge6-wather
+## GitHub Repository and Live Application
 
-    Code Live: https://danielsantana9824.github.io/challenge6-wather/
+GitHub Repository: Weather Search GitHub Repo
+Live Application: Live Weather Search Demo
 
-    ## Credits
+## Credits
+If you worked with collaborators, list their names and GitHub profiles here.
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+API Provider - For weather data.
 
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
----
+
+
