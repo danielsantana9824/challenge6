@@ -131,8 +131,9 @@ function createCard(fechaSumada, favIcon, temp, wind, humidity) {
                 <div class="card-body">
                     <h4 class="card-title" style="display: flex; align-items: center; margin: 0;"> 
                         ${fechaSumada} 
-                        <img src="https://openweathermap.org/img/wn/${favIcon}@2x.png" alt="Weather Icon" style="width: 50px; margin-left: 10px;"> 
                     </h4>
+                    <img src="https://openweathermap.org/img/wn/${favIcon}@2x.png" alt="Weather Icon" style="width: 50px; margin-left: 10px;"> 
+                    <p class="card-text">Temp: ${temp} °F</p>
                     <p class="card-text">Temp: ${temp} °F</p>
                     <p class="card-text">Wind: ${wind} MPH</p>
                     <p class="card-text">Humidity: ${humidity} %</p>
