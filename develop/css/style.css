@@ -6,15 +6,14 @@
 
 html, body {
     height: 100%;
-    overflow-x: hidden; /* Evita el scroll horizontal */
+    overflow-x: hidden; 
 }
 
 body {
     width: 100%;
     min-height: 100%;
-    line-height: 1.6; /* Aumenta la legibilidad con más espacio entre líneas */
+    line-height: 1.6; 
     font-family: 'Arial', sans-serif;
-    background-color: rgb(102, 205, 246);
 }
 
 .btn-info{
@@ -41,6 +40,7 @@ body {
 
 .box {
     border: 3px solid black;
+    line-height: 1.5;
 }
 
 section {
